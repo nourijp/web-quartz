@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Nouri.cc",
+    pageTitle: "Nouri Services",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
