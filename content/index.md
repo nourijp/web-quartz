@@ -1,8 +1,6 @@
 ---
-title: Nouri Services
+title: Welcome
 ---
-
-# Hello!
 
 Welcome to Nouri Services. 
 
