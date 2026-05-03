@@ -30,6 +30,22 @@
       display: flex;
       flex-direction: column;
 
+      .card-image-wrap {
+         width: 100%;
+         height: 160px;
+         border-radius: 8px;
+         overflow: hidden;
+         margin-bottom: 1rem;
+         
+         .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+            display: block;
+         }
+      }
+
       > .desc {
         h3 {
            margin: 0 0 0.5rem 0;

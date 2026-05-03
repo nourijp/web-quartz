@@ -69,10 +69,16 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
       {list.map((page) => {
         const title = page.frontmatter?.title
         const tags = page.frontmatter?.tags ?? []
+        const cover = page.frontmatter?.cover
 
         return (
           <li class="section-li">
             <div class="section">
+              {cover && (
+                <div class="card-image-wrap">
+                  <img src={resolveRelative(fileData.slug!, cover as FullSlug)} alt={title} class="card-image" />
+                </div>
+              )}
               <p class="meta">
                 {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
               </p>
