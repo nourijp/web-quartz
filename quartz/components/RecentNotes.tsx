@@ -45,7 +45,7 @@ export default ((userOpts?: Partial<Options>) => {
 
             return (
               <li class="recent-li">
-                <div class="section">
+                <div class="section" style="display: flex; align-items: center; justify-content: space-between;">
                   <div class="desc">
                     <h3>
                       <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
@@ -54,23 +54,9 @@ export default ((userOpts?: Partial<Options>) => {
                     </h3>
                   </div>
                   {page.dates && (
-                    <p class="meta">
+                    <p class="meta" style="margin: 0; white-space: nowrap;">
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
-                  )}
-                  {opts.showTags && (
-                    <ul class="tags">
-                      {tags.map((tag) => (
-                        <li>
-                          <a
-                            class="internal tag-link"
-                            href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
-                          >
-                            {tag}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
                   )}
                 </div>
               </li>
