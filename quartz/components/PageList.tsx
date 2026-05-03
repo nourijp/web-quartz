@@ -110,11 +110,60 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
 }
 
 PageList.css = `
+.section-ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+.section-li {
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  background: var(--light);
+  display: flex;
+  flex-direction: column;
+}
+.section-li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px var(--highlight);
+  border-color: var(--tertiary);
+}
+.card-image-wrap {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .section h3 {
   margin: 0;
+  font-size: 1.3rem;
 }
-
 .section > .tags {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.section > .desc {
+  flex-grow: 1;
+}
+.section .meta {
+  margin-top: 0;
+  color: var(--gray);
+  font-size: 0.8rem;
 }
 `
