@@ -1,4 +1,4 @@
-import { FullSlug, isFolderPath, resolveRelative } from "../util/path"
+import { FilePath, FullSlug, isFolderPath, resolveRelative, slugifyFilePath } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
@@ -76,7 +76,13 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
             <div class="section">
               {cover && (
                 <div class="card-image-wrap">
-                  <img src={resolveRelative(fileData.slug!, cover as FullSlug)} alt={title} class="card-image" />
+                  <img
+                    src={resolveRelative(fileData.slug!, slugifyFilePath(
+                      (page.slug!.split("/").slice(0, -1).join("/") + "/" + cover).replace(/^\//, "") as FilePath
+                    ))}
+                    alt={title}
+                    class="card-image"
+                  />
                 </div>
               )}
               <p class="meta">
