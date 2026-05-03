@@ -3,12 +3,6 @@ title: Welcome
 cover: ""
 ---
 
-Welcome to Nouri Services. 
-
-- [[Creative Services]]
-- [[Portfolio]]
-- [[Contact]]
-
 
 
 

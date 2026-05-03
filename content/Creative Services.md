@@ -1,3 +1,0 @@
-- [[Photography]]
-- [[Writing / Editing]]
-- 

@@ -1,3 +1,0 @@
-- [[Event Photography]]
-- [[Product Photography]]
-- 
