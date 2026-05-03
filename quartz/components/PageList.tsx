@@ -1,4 +1,4 @@
-import { FilePath, FullSlug, isFolderPath, pathToRoot, resolveRelative, slugifyFilePath } from "../util/path"
+import { FilePath, FullSlug, isFolderPath, resolveRelative, slugifyFilePath } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
@@ -77,7 +77,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
               {cover && (
                 <div class="card-image-wrap">
                   <img
-                    src={pathToRoot(fileData.slug!) + "/" + slugifyFilePath(cover as FilePath)}
+                    src={"/" + slugifyFilePath(cover as FilePath)}
                     alt={title}
                     class="card-image"
                   />

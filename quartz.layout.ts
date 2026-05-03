@@ -9,17 +9,41 @@ export const sharedPageComponents: SharedLayout = {
     Component.ConditionalRender({
       condition: (page) => page.fileData.slug === "index",
       component: Component.RecentNotes({
-        title: "Latest Portfolio Projects",
+        title: "🗓 Latest Events",
         limit: 3,
-        filter: (f) => f.slug !== undefined && f.slug.includes("Portfolio"),
+        filter: (f) => f.slug !== undefined && f.slug.includes("Events") && !f.slug.endsWith("index"),
       }),
     }),
     Component.ConditionalRender({
       condition: (page) => page.fileData.slug === "index",
       component: Component.RecentNotes({
-        title: "Upcoming Events",
+        title: "🛠 Featured Services",
+        limit: 4,
+        filter: (f) => f.slug !== undefined && f.slug.includes("Services") && !f.slug.endsWith("index"),
+      }),
+    }),
+    Component.ConditionalRender({
+      condition: (page) => page.fileData.slug === "index",
+      component: Component.RecentNotes({
+        title: "📚 Classes & Tutoring",
+        limit: 4,
+        filter: (f) => f.slug !== undefined && f.slug.includes("Classes") && !f.slug.endsWith("index"),
+      }),
+    }),
+    Component.ConditionalRender({
+      condition: (page) => page.fileData.slug === "index",
+      component: Component.RecentNotes({
+        title: "🛒 Products",
         limit: 3,
-        filter: (f) => f.slug !== undefined && f.slug.includes("Events"),
+        filter: (f) => f.slug !== undefined && f.slug.includes("Products") && !f.slug.endsWith("index"),
+      }),
+    }),
+    Component.ConditionalRender({
+      condition: (page) => page.fileData.slug === "index",
+      component: Component.RecentNotes({
+        title: "📂 Portfolio",
+        limit: 3,
+        filter: (f) => f.slug !== undefined && f.slug.includes("Portfolio") && !f.slug.endsWith("index"),
       }),
     }),
   ],
