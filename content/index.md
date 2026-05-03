@@ -6,7 +6,7 @@ Welcome to Nouri Services.
 
 - [[Creative Services]]
 - [[Portfolio]]
-- 
+- [[Contact]]
 
 
 
