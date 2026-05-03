@@ -11,7 +11,7 @@ export const sharedPageComponents: SharedLayout = {
       component: Component.RecentNotes({
         title: "Latest Portfolio Projects",
         limit: 3,
-        filter: (f) => f.slug!.startsWith("Portfolio/"),
+        filter: (f) => f.slug !== undefined && f.slug.includes("Portfolio"),
       }),
     }),
     Component.ConditionalRender({
@@ -19,7 +19,7 @@ export const sharedPageComponents: SharedLayout = {
       component: Component.RecentNotes({
         title: "Upcoming Events",
         limit: 3,
-        filter: (f) => f.slug!.startsWith("Events/"),
+        filter: (f) => f.slug !== undefined && f.slug.includes("Events"),
       }),
     }),
   ],
