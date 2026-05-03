@@ -1,6 +1,7 @@
 ---
 title: Photography Prints
 tags: ["services"]
+cover: ""
 ---
 
 # Photography Prints

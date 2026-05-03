@@ -1,5 +1,6 @@
 ---
 title: Welcome
+cover: ""
 ---
 
 Welcome to Nouri Services. 

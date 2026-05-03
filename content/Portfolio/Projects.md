@@ -1,6 +1,7 @@
 ---
 title: Projects
 tags: ["portfolio"]
+cover: ""
 ---
 
 # Projects

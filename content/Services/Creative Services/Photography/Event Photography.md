@@ -1,6 +1,7 @@
 ---
 title: Event Photography
 tags: ["photography"]
+cover: ""
 ---
 
 # Event Photography

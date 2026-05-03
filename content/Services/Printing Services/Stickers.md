@@ -1,6 +1,7 @@
 ---
 title: Stickers
 tags: ["services"]
+cover: ""
 ---
 
 # Stickers

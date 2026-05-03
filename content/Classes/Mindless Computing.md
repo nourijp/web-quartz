@@ -1,6 +1,7 @@
 ---
 title: Mindless Computing
 tags: ["classes"]
+cover: ""
 ---
 
 # Mindless Computing

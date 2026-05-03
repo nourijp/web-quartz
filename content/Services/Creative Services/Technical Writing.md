@@ -1,6 +1,7 @@
 ---
 title: Technical Writing
 tags: ["services"]
+cover: ""
 ---
 
 # Technical Writing

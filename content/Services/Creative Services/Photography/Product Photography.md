@@ -1,6 +1,7 @@
 ---
 title: Product Photography
 tags: ["photography"]
+cover: ""
 ---
 
 # Product Photography

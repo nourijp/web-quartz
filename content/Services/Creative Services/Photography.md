@@ -1,6 +1,7 @@
 ---
 title: Photography
 tags: ["services"]
+cover: ""
 ---
 
 # Photography

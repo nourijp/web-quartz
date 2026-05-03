@@ -1,6 +1,7 @@
 ---
 title: Contact
 tags: ["contact"]
+cover: ""
 ---
 
 # Contact Me
