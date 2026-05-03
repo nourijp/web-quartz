@@ -3,14 +3,9 @@ title: Contact
 tags: ["contact"]
 cover: ""
 ---
-
-# Contact Me
-
 Please feel free to reach out to me for any business inquiries or questions about my services!
 
-- **Email:** 
+- **Email:**  contact@nouri.cc
 - **Phone:** 
-- **LinkedIn:** 
-- **Twitter:** 
+- **LinkedIn:** linkedin.com/in/nouri
 
-*(Fill in your details here in Obsidian!)*
